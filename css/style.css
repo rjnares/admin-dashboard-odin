@@ -64,3 +64,24 @@ body {
   background-color: lightgray; /* temporary background color to see layout sections */
   grid-area: main-content
 }
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+ul,
+li {
+  padding: 0;
+  list-style-type: none;
+}
+
+.logo,
+.nav-item {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  padding: 0.5rem 1rem;
+  gap: 1rem;
+  align-items: center;
+}
