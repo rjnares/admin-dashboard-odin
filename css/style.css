@@ -32,3 +32,35 @@ p, h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
+
+/* Custom styles */
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 4fr;
+  grid-template-areas:
+    'sidebar header'
+    'sidebar main-content';
+}
+
+.header {
+  background-color: white; /* temporary background color to see layout sections */
+  grid-area: header;
+}
+
+.sidebar {
+  background-color: lightskyblue; /* temporary background color to see layout sections */
+  grid-area: sidebar;
+}
+
+.main-content {
+  background-color: lightgray; /* temporary background color to see layout sections */
+  grid-area: main-content
+}
