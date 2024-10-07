@@ -137,12 +137,18 @@ li {
 }
 
 .search-icon,
+.notification-bell-icon,
 .nav-icon {
   width: 1.5rem;
 }
 
+.notification-bell-icon,
 .search-icon {
   fill: var(--primary-font-color, black);
+}
+
+.notification-bell-icon {
+  justify-self: end;
 }
 
 .nav-item span {
