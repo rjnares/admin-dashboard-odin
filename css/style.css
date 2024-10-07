@@ -133,6 +133,10 @@ body {
   padding: 0.7rem 0;
 }
 
+.header button:hover {
+  background-color: var(--link-hover-color, midnightblue);
+}
+
 .sidebar {
   background-color: lightskyblue; /* temporary background color to see layout sections */
   grid-area: sidebar;
