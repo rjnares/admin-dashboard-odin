@@ -210,5 +210,6 @@ a.nav-item:hover {
 }
 
 a.nav-item:focus {
-  outline-offset: -1px;
+  outline: 1px solid var(--secondary-font-color, white);
+  outline-offset: -4px;
 }
