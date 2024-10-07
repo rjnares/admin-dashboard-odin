@@ -38,8 +38,8 @@ p, h1, h2, h3, h4, h5, h6 {
 :root {
   --primary-accent-color: #007cbb;
   --secondary-accent-color: #E2AF31;
-  --primary-background-color: #FFF;
-  --secondary-background-color: #E2E8F0;
+  --primary-background-color: #FEFEFE;
+  --secondary-background-color: #d9dee1;
   --primary-font-color: #000;
   --secondary-font-color: #F7FFFF;
   --tertiary-font-color: #9A9795;
@@ -65,8 +65,28 @@ body {
 }
 
 .header {
-  background-color: white; /* temporary background color to see layout sections */
+  background-color: var(--primary-background-color, white);
   grid-area: header;
+  display: grid;
+  grid-template-columns: 5fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 1.5rem;
+  align-items: center;
+  padding-left: 2.2rem;
+}
+
+.search-component {
+  display: flex;
+  gap: 1rem;
+}
+
+#search-bar {
+  background-color: var(--secondary-background-color);
+  border: 0;
+  border-radius: 15px;
+  height: 1.4lh;
+  width: 100%;
+  padding: 0 10px;
 }
 
 .sidebar {
@@ -106,14 +126,23 @@ li {
   align-items: center;
 }
 
+.logo {
+  padding-top: 0.8rem;
+}
+
 .logo-icon,
 .nav-icon {
   justify-self: center;
   fill: var(--secondary-font-color, white);
 }
 
+.search-icon,
 .nav-icon {
   width: 1.5rem;
+}
+
+.search-icon {
+  fill: var(--primary-font-color, black);
 }
 
 .nav-item span {
