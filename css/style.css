@@ -72,7 +72,10 @@ body {
   grid-template-rows: 1fr 1fr;
   column-gap: 2rem;
   align-items: center;
-  padding-left: 2.2rem;
+  padding: 1rem 2.2rem;
+  row-gap: 1rem;
+  color: var(--primary-font-color, black);
+  font-weight: 600;
 }
 
 .search-component {
@@ -81,7 +84,7 @@ body {
 }
 
 #search-bar {
-  background-color: var(--secondary-background-color);
+  background-color: var(--secondary-background-color, lightgray);
   border: 0;
   border-radius: 15px;
   height: 1.4lh;
@@ -101,8 +104,21 @@ body {
 }
 
 .user-profile-component > span {
-  font-size: 1.4rem;
-  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.user-profile-greeting-component {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.user-profile-greeting-component > img {
+  width: 5rem;
+}
+
+.greeting > p:last-child {
+  font-size: 1.5rem;
 }
 
 .sidebar {
