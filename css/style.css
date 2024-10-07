@@ -76,6 +76,8 @@ body {
   row-gap: 1rem;
   color: var(--primary-font-color, black);
   font-weight: 600;
+  box-shadow: 1px 3px 7px 0px var(--tertiary-font-color, lightgray);
+  position: relative;
 }
 
 .search-component {
@@ -121,13 +123,23 @@ body {
   font-size: 1.5rem;
 }
 
+.header button {
+  background-color: var(--primary-accent-color, blue);
+  color: var(--secondary-font-color, white);
+  border: 0;
+  border-radius: 40px;
+  width: 6.5rem;
+  justify-self: center;
+  padding: 0.7rem 0;
+}
+
 .sidebar {
   background-color: lightskyblue; /* temporary background color to see layout sections */
   grid-area: sidebar;
 }
 
 .main-content {
-  background-color: lightgray; /* temporary background color to see layout sections */
+  background-color: var(--secondary-background-color, gray);
   grid-area: main-content
 }
 
