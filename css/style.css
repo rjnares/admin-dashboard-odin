@@ -54,6 +54,11 @@ body {
   height: 100%;
 }
 
+h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
 .container {
   height: 100%;
   display: grid;
@@ -144,7 +149,41 @@ body {
 
 .main-content {
   background-color: var(--secondary-background-color, gray);
-  grid-area: main-content
+  grid-area: main-content;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "projects announcements"
+    "projects trending";
+  padding: 1.5rem 1.5rem 3rem 1rem;
+}
+
+#projects {
+  grid-area: projects;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.projects-grid > .card {
+  border: 1px solid black;
+}
+
+#announcements {
+  grid-area: announcements;
+}
+
+#trending {
+  grid-area: trending;
 }
 
 .sidebar {
