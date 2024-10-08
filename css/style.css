@@ -161,7 +161,7 @@ h4 {
   background-color: var(--secondary-background-color, gray);
   grid-area: main-content;
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 4fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "projects announcements"
@@ -225,6 +225,7 @@ h4 {
   border-radius: 10px;
   box-shadow: var(--box-shadow);
   padding: 0 2rem;
+  flex: 1;
 }
 
 .announcement {
@@ -247,6 +248,63 @@ h4 {
 
 #trending {
   grid-area: trending;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.trending-container {
+  background-color: var(--primary-background-color, lightgray);
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  flex: 1;
+}
+
+.trending-user {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 1rem;
+}
+
+.trending-user > img {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
+
+.trending-user > .dog-image {
+  background-color: red;
+}
+
+.trending-user > .penguin-image {
+  background-color: skyblue;
+}
+
+.trending-user > .sloth-image {
+  background-color: green;
+}
+
+.trending-user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.trending-user-info > p {
+  font-size: 0.9rem;
+}
+
+.trending-user-info > p:first-child {
+  color: var(--primary-font-color, black);
+}
+
+.trending-user-info > p:last-child {
+  color: var(--tertiary-font-color, lightgray);
 }
 
 .sidebar {
